@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="bootstrap-5.0.1-dist/css/mint_bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+          integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+</head>
+<body>
+    <div id ="appHolder"
+         class="mx-auto container-md d-flex flex-column justify-content-between align-items-center">
+        <h1 class="my-2 display-1 text-center">TODOLIST</h1>
+        <div class="input-group mb-3">
+            <label for="input-task"></label>
+            <input type="text" id="input-task" class="form-control"/>
+            <button type="button" id="add-task-button" class="btn btn-primary">ADD TASK</button>
+            <div class="invalid-feedback">This task already exists</div>
+        </div>
+        <ul id="task-list" class="list-group my-0 container-md">
+
+        </ul>
+
+        <script src="bootstrap-5.0.1-dist/js/bootstrap.min.js"></script>
+        <script src="MyScript.js"></script>
+    </div>
+</body>
+</html>
